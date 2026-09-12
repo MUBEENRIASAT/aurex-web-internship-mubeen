@@ -38,7 +38,7 @@ No build steps or dependencies are required for Week 1.
 **Week:** Week 2 — CSS3, Flexbox & Grid, Responsive Web Design
 
 ## Live Deployment Link
-[https://your-username.github.io/aurex-web-internship-mubeen/](https://your-username.github.io/aurex-web-internship-mubeen/)
+https://mubeenriasat.github.io/aurex-web-internship-mubeen/
 
 ## Task Description
 Transformed the Week 1 HTML profile page into a fully responsive, styled
