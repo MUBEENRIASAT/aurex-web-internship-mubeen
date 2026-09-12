@@ -30,3 +30,40 @@ No build steps or dependencies are required for Week 1.
 - Reinforced proper heading hierarchy (h1 → h2 → h3) for accessibility and SEO.
 - Practiced accessible form design using `<label>` elements tied to inputs via `for`/`id`.
 - Set up Git version control workflow: `git init`, `git add`, `git commit`, `git push`.
+
+  # AUREX Full-Stack Engineering Internship
+
+**Intern Name:** Mubeen
+**Domain:** Full-Stack Web Development
+**Week:** Week 2 — CSS3, Flexbox & Grid, Responsive Web Design
+
+## Live Deployment Link
+[https://your-username.github.io/aurex-web-internship-mubeen/](https://your-username.github.io/aurex-web-internship-mubeen/)
+
+## Task Description
+Transformed the Week 1 HTML profile page into a fully responsive, styled
+personal portfolio using CSS3. The layout uses CSS Grid for the overall
+page structure (header, sidebar navigation, main content) and Flexbox for
+component-level alignment (nav links, skills list, contact form). The page
+is responsive across Desktop, Tablet, and Mobile breakpoints via media
+queries.
+
+## Technologies Used
+- HTML5
+- CSS3 (Grid, Flexbox, Media Queries)
+- Git
+- GitHub
+- GitHub Pages (deployment)
+
+## CSS Features & Layout Techniques Implemented
+- **CSS Grid** for the page skeleton — nav becomes a left sidebar on desktop,
+  stacks above content on mobile (breakpoint at 768px)
+- **Flexbox** for the navigation bar, skills "chip" list, and contact form
+  fields
+- **Media queries** to adjust layout, padding, and typography across
+  Desktop, Tablet, and Mobile screens
+- Custom color palette, consistent spacing, and Google Fonts (JetBrains
+  Mono + Inter) for visual hierarchy
+
+## How to Run Locally
+1. Clone the repository:
