@@ -67,3 +67,39 @@ queries.
 
 ## How to Run Locally
 1. Clone the repository:
+
+# AUREX Full-Stack Engineering Internship
+**Week:** Week 3 — Advanced CSS Grid, Animations & Transitions, CSS Variables
+
+## Live Deployment Link
+[https://mubeenriasat.github.io/aurex-web-internship-mubeen/]
+## Task Description
+Enhanced the Week 2 portfolio by applying advanced CSS techniques: CSS
+custom properties (variables) for a consistent color and design system,
+CSS Grid with `auto-fit`/`minmax` for a fully responsive skills section,
+and keyframe animations with hover transitions to make the page feel more
+polished and interactive. Also refreshed the visual theme to a navy, white,
+and gold color scheme for a cleaner, more professional look.
+
+## Technologies Used
+- HTML5
+- CSS3 (Grid, Flexbox, Custom Properties, Keyframe Animations, Transitions)
+- Git
+- GitHub
+- GitHub Pages (deployment)
+
+## CSS Features & Layout Techniques Implemented
+- **CSS Variables** (`:root`) for colors (navy, gold, white) so the theme
+  can be updated from one place
+- **CSS Grid** for the skills section using `repeat(auto-fit, minmax(140px, 1fr))`,
+  automatically adjusting the number of columns based on screen width
+- **CSS Grid** for the overall page layout on desktop (sidebar nav + main
+  content), switching to a stacked layout on mobile via media query
+- **Flexbox** for the navigation bar and contact form alignment
+- **Keyframe animation** (`@keyframes fadeIn`) so each section fades in
+  smoothly on page load
+- **Transitions** on hover states — nav links, skill chips, buttons, and
+  panel cards all have smooth hover effects
+
+## How to Run Locally
+1. Clone the repository:
