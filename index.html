@@ -1,39 +1,123 @@
-# AUREX Full-Stack Engineering Internship
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mubeen - Personal Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-**Intern Name:** Mubeen
-**Domain:** Full-Stack Web Development
-**Week:** Week 3 — Advanced CSS Grid, Animations & Transitions, CSS Variables
+    <header class="site-header">
+        <h1>Mubeen Riasat</h1>
+        <p>Full-Stack Web Developer | Final-Year BS Information Technology Student</p>
+    </header>
 
-## Live Deployment Link
-[https://mubeenriasat.github.io/aurex-web-internship-mubeen/](https://mubeenriasat.github.io/aurex-web-internship-mubeen/)
+    <nav class="site-nav">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-## Task Description
-Enhanced the Week 2 portfolio by applying advanced CSS techniques: CSS
-custom properties (variables) for a consistent color and design system,
-CSS Grid with `auto-fit`/`minmax` for a fully responsive skills section,
-and keyframe animations with hover transitions to make the page feel more
-polished and interactive. Also refreshed the visual theme to a navy, white,
-and gold color scheme for a cleaner, more professional look.
+    <main class="site-main">
 
-## Technologies Used
-- HTML5
-- CSS3 (Grid, Flexbox, Custom Properties, Keyframe Animations, Transitions)
-- Git
-- GitHub
-- GitHub Pages (deployment)
+        <section id="about" class="panel fade-in">
+            <h2>About Me</h2>
+            <article>
+                <p>
+                    I am a final-year BS Information Technology student at Punjab University,
+                    currently working as a Full-Stack Web Development Intern at AUREX. I am
+                    passionate about building clean, accessible web applications and am
+                    currently strengthening my foundations in HTML, CSS, JavaScript, and the
+                    MERN stack.
+                </p>
+            </article>
+        </section>
 
-## CSS Features & Layout Techniques Implemented
-- **CSS Variables** (`:root`) for colors (navy, gold, white) so the theme
-  can be updated from one place
-- **CSS Grid** for the skills section using `repeat(auto-fit, minmax(140px, 1fr))`,
-  automatically adjusting the number of columns based on screen width
-- **CSS Grid** for the overall page layout on desktop (sidebar nav + main
-  content), switching to a stacked layout on mobile via media query
-- **Flexbox** for the navigation bar and contact form alignment
-- **Keyframe animation** (`@keyframes fadeIn`) so each section fades in
-  smoothly on page load
-- **Transitions** on hover states — nav links, skill chips, buttons, and
-  panel cards all have smooth hover effects
+        <section id="skills" class="panel fade-in">
+            <h2>Skills</h2>
+            <ul class="skills-grid">
+                <li>HTML5 &amp; Semantic Markup</li>
+                <li>CSS3, Flexbox &amp; Grid</li>
+                <li>Git &amp; GitHub Version Control</li>
+                <li>JavaScript (Fundamentals)</li>
+                <li>MongoDB Fundamentals</li>
+                <li>Java (Android Development)</li>
+                <li>PHP</li>
+            </ul>
+        </section>
 
-## How to Run Locally
-1. Clone the repository:
+        <section id="education" class="panel fade-in">
+            <h2>Education</h2>
+            <table>
+                <caption>Academic Background</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Degree</th>
+                        <th scope="col">Institution</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>BS Information Technology</td>
+                        <td>Punjab University</td>
+                        <td>Final Year</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="experience" class="panel fade-in">
+            <h2>Experience</h2>
+            <article class="experience-item">
+                <h3>Full-Stack Engineering Intern — AUREX (Online)</h3>
+                <p>
+                    Currently completing Month 3 of the AUREX Full-Stack Engineering
+                    Internship — development setup, Git/GitHub, HTML5, CSS3 layouts,
+                    and now advanced CSS Grid, animations, and custom properties.
+                </p>
+            </article>
+            <article class="experience-item">
+                <h3>MERN Stack Development Project</h3>
+                <p>
+                    Contributed to the development of Website using the MERN
+                    stack during a prior internship.
+                </p>
+            </article>
+        </section>
+
+        <section id="contact" class="panel fade-in">
+            <h2>Contact Me</h2>
+            <form action="#" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Mubeen. All Rights Reserved.</p>
+        <p>Built as part of the AUREX Full-Stack Engineering Internship — Week 3.</p>
+    </footer>
+
+</body>
+</html>
