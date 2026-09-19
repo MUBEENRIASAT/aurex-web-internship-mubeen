@@ -41,8 +41,10 @@ body {
 
 h1, h2, h3, nav { font-family: var(--font-heading); }
 
-a { color: var(--color-accent-dark); text-decoration: none; transition: color var(--transition-fast); }
-a:hover, a:focus { color: var(--color-accent); text-decoration: underline; }
+a { color: var(--color-accent-dark); 
+   text-decoration: none; transition: color var(--transition-fast); }
+    a:hover, a:focus { color: var(--color-accent);
+    text-decoration: underline; }
 
 .site-header   { grid-area: header; }
 .site-nav      { grid-area: nav; }
@@ -63,8 +65,10 @@ a:hover, a:focus { color: var(--color-accent); text-decoration: underline; }
     text-align: center;
     border-bottom: 3px solid var(--color-accent);
 }
-.site-header h1 { font-size: var(--font-size-h1); font-weight: 700; letter-spacing: -0.02em; }
-.site-header p { margin-top: var(--space-sm); color: #C3CEDE; font-size: var(--font-size-body); }
+.site-header h1 { font-size: var(--font-size-h1);
+     font-weight: 700; letter-spacing: -0.02em; }
+.site-header p { margin-top: var(--space-sm); 
+    color: #C3CEDE; font-size: var(--font-size-body); }
 
 @media (min-width: 768px) { .site-header { text-align: left; padding: var(--space-lg); border-bottom: none; } }
 
@@ -72,7 +76,8 @@ a:hover, a:focus { color: var(--color-accent); text-decoration: underline; }
     background-color: var(--color-navy-light);
     padding: var(--space-md);
 }
-.site-nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: var(--space-md); justify-content: center; }
+.site-nav ul { list-style: none; display: flex;
+  flex-wrap: wrap; gap: var(--space-md); justify-content: center; }
 .site-nav a {
     position: relative; font-size: 0.85rem; font-weight: 600; color: #E4E9F2;
     text-transform: uppercase; letter-spacing: 0.04em; padding-bottom: 2px;
@@ -90,7 +95,8 @@ a:hover, a:focus { color: var(--color-accent); text-decoration: underline; }
     .site-nav ul { flex-direction: column; align-items: flex-start; gap: var(--space-md); }
 }
 
-.site-main { padding: var(--space-md); display: flex; flex-direction: column; gap: var(--space-lg); max-width: 760px; }
+.site-main { padding: var(--space-md); display: flex;
+    flex-direction: column; gap: var(--space-lg); max-width: 760px; }
 @media (min-width: 768px) { .site-main { padding: var(--space-lg); } }
 
 .panel {
