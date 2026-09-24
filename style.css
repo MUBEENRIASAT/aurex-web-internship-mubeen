@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --color-bg: #F8F9FB;
     --color-surface: #FFFFFF;
     --color-border: #E2E5EB;
@@ -168,4 +168,4 @@ button[type="submit"]:hover { background-color: var(--color-accent-dark); transf
 button[type="submit"]:active { transform: translateY(0); }
 
 .site-footer { background-color: var(--color-navy-light); color: #C3CEDE; text-align: center; padding: var(--space-md); font-size: 0.85rem; }
-.site-footer p + p { margin-top: 0.25rem; }
+.site-footer p + p { margin-top: 0.25rem; } */
