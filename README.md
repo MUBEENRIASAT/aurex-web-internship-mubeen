@@ -192,11 +192,11 @@ I also learned how to handle user events, validate form input, dynamically creat
 
 Live Deployment Link:
 
-Add your GitHub Pages or Vercel link here.
+[https://mubeenriasat.github.io/aurex-web-internship-mubeen/]
 
 
 ## GitHub Repository
 
 GitHub Repository Link:
 
-Add your GitHub repository link here.
+https://github.com/MUBEENRIASAT/aurex-web-internship-mubeen/
