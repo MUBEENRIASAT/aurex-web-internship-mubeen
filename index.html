@@ -3,161 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mubeen - Personal Profile</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+
+    <title>Task Manager | AUREX Week 4</title>
+
+    <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
 
-    <header class="site-header">
-<<<<<<< HEAD
-        <h1>Mubeen Riasat</h1>
-=======
-        <h1>Mubeen</h1>
->>>>>>> 932133f90264ccb64e5f84dd90b8d6a17afb8c25
-        <p>Full-Stack Web Developer | Final-Year BS Information Technology Student</p>
+    <header class="header">
+        <div class="container">
+            <h1>Task Manager</h1>
+            <p>AUREX Web Development Internship — Week 4</p>
+        </div>
     </header>
 
-    <nav class="site-nav">
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <main class="container">
 
-    <main class="site-main">
+        <!-- Add Task Section -->
+        <section class="task-form-section">
 
-<<<<<<< HEAD
-        <section id="about" class="panel fade-in">
-=======
-        <section id="about" class="panel">
->>>>>>> 932133f90264ccb64e5f84dd90b8d6a17afb8c25
-            <h2>About Me</h2>
-            <article>
-                <p>
-                    I am a final-year BS Information Technology student at Punjab University,
-                    currently working as a Full-Stack Web Development Intern at AUREX. I am
-                    passionate about building clean, accessible web applications and am
-                    currently strengthening my foundations in HTML, CSS, JavaScript, and the
-                    MERN stack.
-                </p>
-            </article>
-        </section>
+            <h2 id="form-title">Add New Task</h2>
 
-<<<<<<< HEAD
-        <section id="skills" class="panel fade-in">
-            <h2>Skills</h2>
-            <ul class="skills-grid">
-                <li>HTML5 &amp; Semantic Markup</li>
-                <li>CSS3, Flexbox &amp; Grid</li>
-                <li>Git &amp; GitHub Version Control</li>
-                <li>Networking &amp; Cisco Packet Tracer</li>
-=======
-        <section id="skills" class="panel">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>HTML5 &amp; Semantic Markup</li>
-                <li>CSS3, Flexbox &amp; Grid</li>
-                <li>Git &amp; GitHub Version Control</li>
->>>>>>> 932133f90264ccb64e5f84dd90b8d6a17afb8c25
-                <li>JavaScript (Fundamentals)</li>
-                <li>MongoDB Fundamentals</li>
-                <li>Java (Android Development)</li>
-                <li>PHP</li>
-            </ul>
-        </section>
+            <form id="task-form">
 
-<<<<<<< HEAD
-        <section id="education" class="panel fade-in">
-=======
-        <section id="education" class="panel">
->>>>>>> 932133f90264ccb64e5f84dd90b8d6a17afb8c25
-            <h2>Education</h2>
-            <table>
-                <caption>Academic Background</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Degree</th>
-                        <th scope="col">Institution</th>
-                        <th scope="col">Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>BS Information Technology</td>
-                        <td>Punjab University</td>
-                        <td>Final Year</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-<<<<<<< HEAD
-        <section id="experience" class="panel fade-in">
-=======
-        <section id="experience" class="panel">
->>>>>>> 932133f90264ccb64e5f84dd90b8d6a17afb8c25
-            <h2>Experience</h2>
-            <article class="experience-item">
-                <h3>Full-Stack Engineering Intern — AUREX (Online)</h3>
-                <p>
-<<<<<<< HEAD
-                    Currently completing Month 3 of the AUREX Full-Stack Engineering
-                    Internship — development setup, Git/GitHub, HTML5, CSS3 layouts,
-                    and now advanced CSS Grid, animations, and custom properties.
-                </p>
-            </article>
-        </section>
-        <section id="contact" class="panel fade-in">
-=======
-                    Currently completing Month 1 of the AUREX Full-Stack Engineering
-                    Internship, focused on development environment setup, Git/GitHub
-                    fundamentals, HTML5, and CSS3 with responsive layouts.
-                </p>
-            </article>
-            <article class="experience-item">
-                <h3>MERN Stack Development — Internship Project</h3>
-                <p>
-                    Contributed to the development of an Alumni Website using the MERN
-                    stack during a prior internship.
-                </p>
-            </article>
-        </section>
-
-        <section id="contact" class="panel">
->>>>>>> 932133f90264ccb64e5f84dd90b8d6a17afb8c25
-            <h2>Contact Me</h2>
-            <form action="#" method="post" class="contact-form">
                 <div class="form-group">
-                    <label for="name">Full Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <label for="task-input">Task</label>
+
+                    <input
+                        type="text"
+                        id="task-input"
+                        placeholder="Enter your task..."
+                        autocomplete="off"
+                    >
+
+                    <small id="error-message"></small>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5"></textarea>
-                </div>
-                <button type="submit">Send Message</button>
+
+                <button type="submit" id="submit-button">
+                    Add Task
+                </button>
+
+                <button
+                    type="button"
+                    id="cancel-button"
+                    class="cancel-btn hidden"
+                >
+                    Cancel
+                </button>
+
             </form>
+
+        </section>
+
+
+        <!-- Task Controls -->
+        <section class="task-controls">
+
+            <h2>My Tasks</h2>
+
+            <div class="filter-buttons">
+
+                <button
+                    class="filter-btn active"
+                    data-filter="all"
+                >
+                    All
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="pending"
+                >
+                    Pending
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="completed"
+                >
+                    Completed
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Task List -->
+        <section class="task-list-section">
+
+            <div id="task-list"></div>
+
+            <p id="empty-message" class="empty-message">
+                No tasks available.
+            </p>
+
         </section>
 
     </main>
 
-    <footer class="site-footer">
-        <p>&copy; 2026 Mubeen. All Rights Reserved.</p>
-<<<<<<< HEAD
-        <p>Built as part of the AUREX Full-Stack Engineering Internship — Week 3.</p>
-=======
-        <p>Built as part of the AUREX Full-Stack Engineering Internship — Week 2.</p>
->>>>>>> 932133f90264ccb64e5f84dd90b8d6a17afb8c25
+
+    <footer class="footer">
+        <p>AUREX Full-Stack Engineering Internship — Week 4</p>
     </footer>
+
+
+    <script src="scripts/main.js"></script>
 
 </body>
 </html>

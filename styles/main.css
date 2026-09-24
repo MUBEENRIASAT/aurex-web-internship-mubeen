@@ -1,0 +1,310 @@
+/* ================================
+   RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================================
+   GENERAL
+================================ */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f6fa;
+    color: #222;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.header {
+    background: #1e3a5f;
+    color: white;
+    padding: 30px 0;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+
+/* ================================
+   FORM SECTION
+================================ */
+
+.task-form-section {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+}
+
+.task-form-section h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #1e3a5f;
+}
+
+
+/* ================================
+   ERROR MESSAGE
+================================ */
+
+#error-message {
+    display: block;
+    color: #d62828;
+    margin-top: 6px;
+}
+
+
+/* ================================
+   BUTTONS
+================================ */
+
+button {
+    border: none;
+    cursor: pointer;
+    padding: 11px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+#submit-button {
+    background: #1e3a5f;
+    color: white;
+}
+
+#submit-button:hover {
+    background: #162d4a;
+}
+
+.cancel-btn {
+    background: #777;
+    color: white;
+    margin-left: 8px;
+}
+
+.cancel-btn:hover {
+    background: #555;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* ================================
+   TASK CONTROLS
+================================ */
+
+.task-controls {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.task-controls h2 {
+    font-size: 22px;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.filter-btn {
+    background: #e5e7eb;
+    color: #333;
+}
+
+.filter-btn:hover {
+    background: #d1d5db;
+}
+
+.filter-btn.active {
+    background: #1e3a5f;
+    color: white;
+}
+
+
+/* ================================
+   TASK CARD
+================================ */
+
+.task-card {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+}
+
+.task-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+}
+
+.task-checkbox {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.task-title {
+    font-size: 16px;
+    word-break: break-word;
+}
+
+.task-title.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+
+/* ================================
+   TASK ACTIONS
+================================ */
+
+.task-actions {
+    display: flex;
+    gap: 8px;
+    margin-left: 15px;
+}
+
+.edit-btn {
+    background: #f0ad4e;
+    color: white;
+}
+
+.edit-btn:hover {
+    background: #d99435;
+}
+
+.delete-btn {
+    background: #d62828;
+    color: white;
+}
+
+.delete-btn:hover {
+    background: #b71c1c;
+}
+
+
+/* ================================
+   EMPTY MESSAGE
+================================ */
+
+.empty-message {
+    text-align: center;
+    padding: 30px;
+    color: #777;
+    background: white;
+    border-radius: 10px;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+.footer {
+    margin-top: 50px;
+    background: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 650px) {
+
+    .task-controls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter-buttons {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .filter-btn {
+        flex: 1;
+    }
+
+    .task-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .task-actions {
+        margin-left: 30px;
+    }
+
+    .header h1 {
+        font-size: 26px;
+    }
+}
